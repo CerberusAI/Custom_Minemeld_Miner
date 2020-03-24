@@ -1,0 +1,28 @@
+url: https://github.com/CerberusAI/Custom_Minemeld_Miner
+description: >
+  Pulls IPs for GitHub
+
+prototypes:
+  GetIPs:
+    author: Ax
+    class: githubminer.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IP
+    tags:
+      - extension
+      - githubminer
+    description: >
+      Pulls from api.github.com/meta
+    config:
+      # source name used in the indicators
+      source_name: github.IPs
+      # age out of indicators
+      # disabled, removed when they disappear from the channel
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green

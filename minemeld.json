@@ -1,0 +1,17 @@
+{
+    "version": "0.5",
+    "name": "github-miner",
+    "author": "Ax",
+    "author_email": "chris@axconsulting.com",
+    "description": "Pulls IPs from GitHub's meta API",
+    "url": "https://github.com/CerberusAI/Custom_Minemeld_Miner",
+    "entry_points": {
+        "minemeld_nodes": {
+            "githubminer.Miner": "githubminer.node:Miner"
+        },
+        "minemeld_prototypes": {
+            "githubminer.prototypes": "githubminer:prototypes"
+        }
+    },
+    "manifest_version": 0
+}
